@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Production-grade starter website with accessible, responsive, and modern HTML, CSS, and JavaScript.">
+  <title>Nova Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Nova home">Nova</a>
+      <button class="menu-btn" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <nav id="primary-nav" class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-btn" type="button" aria-pressed="false">Toggle theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Modern web starter</p>
+          <h1>Build fast, accessible, and polished experiences.</h1>
+          <p class="lead">A clean starter template with semantic HTML, responsive CSS, and lightweight JavaScript for real-world projects.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Get started</a>
+            <a class="btn btn-secondary" href="#features">See features</a>
+          </div>
+        </div>
+
+        <div class="card hero-card" aria-label="Quick stats">
+          <h2>Why this works</h2>
+          <ul>
+            <li>Semantic structure for SEO and accessibility.</li>
+            <li>Responsive layout with modern CSS.</li>
+            <li>Reusable components and clean JS behavior.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Keyboard-friendly navigation, clear focus states, and proper labels.</p>
+          </article>
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Mobile-first layout that scales beautifully across screen sizes.</p>
+          </article>
+          <article class="card">
+            <h3>Interactive</h3>
+            <p>Theme switching and menu toggling handled with simple, maintainable JavaScript.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About this template</h2>
+          <p>This starter is ideal for landing pages, small business sites, portfolios, and SaaS demos.</p>
+        </div>
+        <div class="card">
+          <h3>Best practices included</h3>
+          <p>Single H1, descriptive metadata, reusable utility classes, and unobtrusive scripts loaded with <code>defer</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Use this section for a form, CTA, or lead capture component.</p>
+        </div>
+
+        <form class="card form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
