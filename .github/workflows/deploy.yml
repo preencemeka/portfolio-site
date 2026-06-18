@@ -24,9 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: test -f cicd-docker-demo/index.html
-      - run: test -f cicd-docker-demo/style.css
-      - run: test -f cicd-docker-demo/script.js
+      - run: test -f index.html
+      - run: test -f style.css
+      - run: test -f script.js
 
 # ---------------- BUILD ----------------
   build:
