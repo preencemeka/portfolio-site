@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CI/CD Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Preencemeka Montesorri is a nurturing early years and primary school focused on confidence, curiosity, and practical learning.">
+  <title>Preencemeka Montesorri | Nurturing Bright Beginnings</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello CI/CD Pipeline 🚀</h1>
-  <p> Hey People! This web page has just be updated to see if it will reflect on my browser</p>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Preencemeka Montesorri home">
+      <span class="brand-mark">PM</span>
+      <span>
+        <strong>Preencemeka</strong>
+        <small>Montesorri</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-nav>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Preencemeka Montesorri welcome">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Early Years - Nursery - Primary</p>
+        <h1>Preencemeka Montesorri</h1>
+        <p class="hero-copy">A calm, joyful school environment where children learn by exploring, asking questions, creating, and growing with care.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#admissions">Start Admission</a>
+          <a class="button button-secondary" href="#programs">View Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info" aria-label="School highlights">
+      <article>
+        <strong>Small Classes</strong>
+        <span>Personal attention for every learner</span>
+      </article>
+      <article>
+        <strong>Practical Learning</strong>
+        <span>Hands-on Montessori-inspired activities</span>
+      </article>
+      <article>
+        <strong>Safe Campus</strong>
+        <span>Warm supervision and parent updates</span>
+      </article>
+    </section>
+
+    <section class="section split" id="about">
+      <div>
+        <p class="section-kicker">About The School</p>
+        <h2>Built for confident, curious children.</h2>
+      </div>
+      <div class="section-copy">
+        <p>Preencemeka Montesorri supports each child academically, socially, and emotionally. Our classrooms are structured for discovery, independence, language growth, numeracy confidence, and respectful relationships.</p>
+        <p>Teachers guide children through purposeful activities, creative projects, reading routines, outdoor play, and character-building moments that make learning feel natural and memorable.</p>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="section-heading">
+        <p class="section-kicker">Learning Pathways</p>
+        <h2>Programs for every early milestone.</h2>
+      </div>
+
+      <div class="program-grid">
+        <article class="program-card">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="Children learning with classroom materials">
+          <div>
+            <span>Age 2-3</span>
+            <h3>Pre-Nursery</h3>
+            <p>Gentle routines, sensory play, language development, music, movement, and early independence.</p>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80" alt="Children reading and working together in class">
+          <div>
+            <span>Age 3-5</span>
+            <h3>Nursery</h3>
+            <p>Phonics, early writing, counting, practical life skills, art, storytelling, and guided exploration.</p>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80" alt="Primary school classroom with desks and learning displays">
+          <div>
+            <span>Age 5+</span>
+            <h3>Primary</h3>
+            <p>Strong foundations in literacy, mathematics, science, social studies, technology, and leadership.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section values" aria-label="School values">
+      <div class="value-panel">
+        <h2>What children experience daily</h2>
+        <ul>
+          <li>Respectful classroom culture</li>
+          <li>Reading and communication practice</li>
+          <li>Creative arts and purposeful play</li>
+          <li>Outdoor activity and social confidence</li>
+          <li>Clean routines, safety, and care</li>
+        </ul>
+      </div>
+      <div class="value-image" role="img" aria-label="Teacher helping pupils with class activity"></div>
+    </section>
+
+    <section class="section admissions" id="admissions">
+      <div class="section-heading">
+        <p class="section-kicker">Admissions</p>
+        <h2>A simple path into our school community.</h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Book a Visit</h3>
+          <p>Tour the classrooms, meet staff, and ask questions about your child's needs.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Submit Details</h3>
+          <p>Complete the application form and provide the required child and parent information.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Begin Learning</h3>
+          <p>Receive onboarding guidance, class placement, and school readiness information.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-heading">
+        <p class="section-kicker">Campus Moments</p>
+        <h2>A bright place to learn and belong.</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Teacher speaking with students in a classroom">
+        <img src="https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=800&q=80" alt="Child drawing during class activity">
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80" alt="Students doing focused classroom work">
+        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=800&q=80" alt="Children reading together">
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-details">
+        <p class="section-kicker">Contact</p>
+        <h2>Speak with admissions.</h2>
+        <p>Use the form to request a tour, ask about fees, or check class availability. Replace the sample contact details below with the school's official information.</p>
+        <div class="contact-list">
+          <a href="tel:+23470646396905">+23470646396905</a>
+          <a href="mailto:admissions@preencemeka.edu">admissions@preencemeka.edu</a>
+          <span>24 Carlton Street, Carlton, Melbourne VIC 3053, Australia</span>
+        </div>
+      </div>
+
+      <form class="contact-form" data-contact-form>
+        <label>
+          Parent or Guardian Name
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" name="phone" placeholder="+234..." required>
+        </label>
+        <label>
+          Child's Class of Interest
+          <select name="program" required>
+            <option value="">Select a program</option>
+            <option>Pre-Nursery</option>
+            <option>Nursery</option>
+            <option>Primary</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us what you would like to know"></textarea>
+        </label>
+        <button class="button button-primary" type="submit" data-submit-button>Send Enquiry</button>
+        <p class="form-status" role="status" data-form-status></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Preencemeka Montesorri. All rights reserved.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
+
