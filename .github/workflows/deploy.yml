@@ -124,6 +124,9 @@ jobs:
 
 
     steps:
+      - name: Confirm Azure Login
+        run: az account show
+  
 
       - run: |
 
