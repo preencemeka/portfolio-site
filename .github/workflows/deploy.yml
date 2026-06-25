@@ -132,4 +132,14 @@ jobs:
 
       - run: |
 
-          echo "Deploying employee application..."
+          #echo "Deploying employee application..."
+          az webapp config container set \
+            --name cicd-preencewebapp \
+            --resource-group cicd-rg \
+            --container-image-name ${{ secrets.ACR_LOGIN_SERVER }}/ci-cd-demo:${{ github.sha }} \
+            --container-registry-url https://${{ secrets.ACR_LOGIN_SERVER }} \
+            --container-registry-user ${{ secrets.ACR_USERNAME }} \
+            --container-registry-password ${{ secrets.ACR_PASSWORD }}
+
+      - name: Restart App Service
+        run: az webapp restart --name cicd-preencewebapp --resource-group cicd-rg
